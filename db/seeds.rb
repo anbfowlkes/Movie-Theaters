@@ -5,7 +5,8 @@ m1 = Movie.create(name: "Spiderman: No Way Home", runtime: '108 minutes', rating
 m2 = Movie.create(name: "Top Gun", runtime: '120 minutes', rating: 'G', theater_id: t2.id)
 m3 = Movie.create(name: "Interstellar", runtime: '113 minutes', rating: 'G', theater_id: t2.id)
 
-
+s1 = Showtime.create(movie_id: m3.id, start_time: 2.hours.from_now, end_time: 2.hours.from_now + 90.minutes)
+s2 = Showtime.create(movie_id: m3.id, start_time: 4.hours.from_now, end_time: 2.hours.from_now + 90.minutes)
 
 
 
